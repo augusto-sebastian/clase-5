@@ -7,6 +7,7 @@ $botonCalcular.onclick = function(){
 
     sueldoMensual = salarioAnual/CANTIDAD_MESES;
 
-    document.querySelector('#salario-mensual').innerText = sueldoMensual;
+    document.querySelector('#salario-mensual').value = sueldoMensual;
+    
    return false;
 }
