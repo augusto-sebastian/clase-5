@@ -10,12 +10,25 @@ $botonCalculo.onclick = function(){
             console.log(numerosLi[i].innerText);
             sumatoriaArray=sumatoriaArray + Number(numerosLi[i].innerText);
         }
-
         resultadoPromedio= sumatoriaArray/numerosLi.length;
-        console.log(sumatoriaArray);
-        
-        
         document.querySelector('#promedio').innerText =resultadoPromedio;
+
+
+    let numeroMasPequenio = Number(numerosLi[0].innerText);    
+    for(let i=0; i<numerosLi.length;i++){
+        if(numeroMasPequenio > Number(numerosLi[i].innerText)){
+            numeroMasPequenio = Number(numerosLi[i].innerText)
+        }
+    }
+    document.querySelector('#pequenio').innerText =numeroMasPequenio;
+
+
+
+
+
 
 return false;
 }
+        
+        
+        
