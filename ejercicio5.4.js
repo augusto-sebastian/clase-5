@@ -31,6 +31,22 @@ $botonCalculo.onclick = function(){
         }
         document.querySelector('#grande').innerText =numeroMasGrande;
 
+    
+    let numeroMasRepetido, contadorBase=0;    
+        for(let i=0; i<numerosLi.length;i++){
+            let contadorMasSeRepite =0;    
+            for(let j=0; j<numerosLi.length;j++){
+            
+                if(Number(numerosLi[i].innerText) === Number(numerosLi[j].innerText)){
+                    contadorMasSeRepite ++;
+                }
+                if(contadorMasSeRepite>contadorBase){
+                    numeroMasRepetido=Number(numerosLi[i].innerText) 
+                    contadorBase= contadorMasSeRepite;
+                }
+            }
+        }
+        document.querySelector('#frecuente').innerText =numeroMasRepetido; 
 
 
 
