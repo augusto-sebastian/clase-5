@@ -15,14 +15,21 @@ $botonCalculo.onclick = function(){
 
 
     let numeroMasPequenio = Number(numerosLi[0].innerText);    
-    for(let i=0; i<numerosLi.length;i++){
-        if(numeroMasPequenio > Number(numerosLi[i].innerText)){
-            numeroMasPequenio = Number(numerosLi[i].innerText)
+        for(let i=0; i<numerosLi.length;i++){
+            if(numeroMasPequenio > Number(numerosLi[i].innerText)){
+                numeroMasPequenio = Number(numerosLi[i].innerText)
+            }
         }
-    }
-    document.querySelector('#pequenio').innerText =numeroMasPequenio;
+        document.querySelector('#pequenio').innerText =numeroMasPequenio;
 
-
+   
+    let numeroMasGrande = Number(numerosLi[0].innerText);    
+        for(let i=0; i<numerosLi.length;i++){
+            if(numeroMasGrande < Number(numerosLi[i].innerText)){
+                numeroMasGrande = Number(numerosLi[i].innerText)
+            }
+        }
+        document.querySelector('#grande').innerText =numeroMasGrande;
 
 
 
