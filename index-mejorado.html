@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main-mejorado.css'>
+    
+</head>
+<body>
+    
+    <form id="generador-clases">
+        
+        <label for="cantidad-clases">cantidad de clases</label>
+        <input type="number" id="cantidad-clases"/>
+        <button id="mostrar-clases">mostrar clases</button>
+
+
+        <div id="clases">
+
+        </div>
+            
+        <button id="calcular" class="oculto">Calcular tiempo total</button>
+         
+        <div id="resultados" class="oculto">
+          
+            <p> Las horas totales de las clases son <strong id="tiempo-hora"></strong></p>
+            <p>Las minutos totales de las clases son <strong id="tiempo-minuto"></strong></p>
+            <p>Las segundos totales de las clases son    <strong id="tiempo-segundo"></strong></p>
+            
+        </div> 
+    
+        <button id="resetear" class="oculto">Resetear</button>
+
+        
+        
+    </form>
+    
+    <script src="calculos-ejer5.3.js"></script>
+    <script src="ejercicio-mejorado5.3.js"></script>
+</body>
+</html>
